@@ -7,7 +7,7 @@ export const Footer: React.FC = () => {
   return (
     <footer className="pb-4 md:pb-[82px]">
       <Container>
-        <div className="flex flex-col md:flex-row text-center items-center justify-center md:justify-between gap-6 text-sm md:text-xs text-grey-700">
+        <div className="flex flex-col md:flex-row text-center items-center lg:items-stretch justify-center md:justify-between gap-6 text-sm md:text-xs text-grey-700">
           <div className="flex flex-col md:flex-row gap-2 md:gap-6">
             {links.map((link, index) => {
               const isLast = index === links.length - 1;
