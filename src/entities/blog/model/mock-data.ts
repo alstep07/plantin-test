@@ -3,12 +3,13 @@ import { Blog, BlogCategory } from "./schema";
 export const blogs: Blog[] = [
   {
     id: "1",
-    title: "Tips & Tricks For Cutting Plant Propagation",
+    title: "Tips & Tricks For Cutting",
     content:
-      "Learn the essential techniques for successful plant propagation through cutting. This comprehensive guide covers the best practices, tools needed, and step-by-step instructions to help you multiply your favorite plants with confidence.",
+      "Pruning, like any other skill, requires knowing what you are doing to achieve success. The old idea that anyone with a chain saw or a pruning saw can be a landscape pruner is far from the truth. More trees are killed or ruined each year from improper pruning than by pests. Remember that pruning is the removal or...",
     readDurationMinutes: 8,
     createdAt: "2024-03-15T10:00:00Z",
     categories: [BlogCategory.FEATURED],
+    imageSrc: "/blog/plant_care.png",
   },
   {
     id: "2",
@@ -18,6 +19,7 @@ export const blogs: Blog[] = [
     readDurationMinutes: 6,
     createdAt: "2024-03-14T15:30:00Z",
     categories: [BlogCategory.INTERESTING],
+    imageSrc: "/blog/plants.png",
   },
   {
     id: "3",
@@ -27,6 +29,7 @@ export const blogs: Blog[] = [
     readDurationMinutes: 10,
     createdAt: "2024-03-13T09:15:00Z",
     categories: [BlogCategory.TOP_OF_THE_DAY],
+    imageSrc: "/blog/watering.png",
   },
   {
     id: "4",
@@ -36,6 +39,7 @@ export const blogs: Blog[] = [
     readDurationMinutes: 7,
     createdAt: "2024-03-12T14:45:00Z",
     categories: [BlogCategory.INTERESTING],
+    imageSrc: "/blog/repot.png",
   },
   {
     id: "5",
@@ -45,6 +49,7 @@ export const blogs: Blog[] = [
     readDurationMinutes: 9,
     createdAt: "2024-03-11T11:20:00Z",
     categories: [BlogCategory.TOP_OF_THE_DAY],
+    imageSrc: "/blog/sprout.png",
   },
   {
     id: "6",
@@ -54,6 +59,7 @@ export const blogs: Blog[] = [
     readDurationMinutes: 8,
     createdAt: "2024-03-10T13:25:00Z",
     categories: [BlogCategory.INTERESTING],
+    imageSrc: "/blog/plant_care.png",
   },
   {
     id: "7",
@@ -63,6 +69,7 @@ export const blogs: Blog[] = [
     readDurationMinutes: 11,
     createdAt: "2024-03-09T16:40:00Z",
     categories: [],
+    imageSrc: "/blog/plants.png",
   },
   {
     id: "8",
@@ -72,6 +79,7 @@ export const blogs: Blog[] = [
     readDurationMinutes: 9,
     createdAt: "2024-03-08T08:50:00Z",
     categories: [BlogCategory.INTERESTING],
+    imageSrc: "/blog/soil.png",
   },
   {
     id: "9",
@@ -81,6 +89,7 @@ export const blogs: Blog[] = [
     readDurationMinutes: 7,
     createdAt: "2024-03-07T12:15:00Z",
     categories: [BlogCategory.INTERESTING],
+    imageSrc: "/blog/plant_care.png",
   },
   {
     id: "10",
@@ -90,6 +99,7 @@ export const blogs: Blog[] = [
     readDurationMinutes: 6,
     createdAt: "2024-03-06T10:30:00Z",
     categories: [BlogCategory.INTERESTING],
+    imageSrc: "/blog/watering.png",
   },
   {
     id: "11",
@@ -99,6 +109,7 @@ export const blogs: Blog[] = [
     readDurationMinutes: 8,
     createdAt: "2024-03-05T09:15:00Z",
     categories: [],
+    imageSrc: "/blog/sprout.png",
   },
   {
     id: "12",
@@ -108,6 +119,7 @@ export const blogs: Blog[] = [
     readDurationMinutes: 10,
     createdAt: "2024-03-04T14:20:00Z",
     categories: [],
+    imageSrc: "/blog/sprout.png",
   },
   {
     id: "13",
@@ -117,6 +129,7 @@ export const blogs: Blog[] = [
     readDurationMinutes: 7,
     createdAt: "2024-03-03T11:45:00Z",
     categories: [],
+    imageSrc: "/blog/plant_care.png",
   },
   {
     id: "14",
@@ -126,6 +139,7 @@ export const blogs: Blog[] = [
     readDurationMinutes: 9,
     createdAt: "2024-03-02T16:30:00Z",
     categories: [],
+    imageSrc: "/blog/plants.png",
   },
   {
     id: "15",
@@ -135,5 +149,6 @@ export const blogs: Blog[] = [
     readDurationMinutes: 6,
     createdAt: "2024-03-01T10:00:00Z",
     categories: [],
+    imageSrc: "/blog/plant_care.png",
   },
 ];

@@ -1,17 +1,17 @@
 import { SearchParams } from "@/shared/types";
-import { clsx, type ClassValue } from "clsx"
+import { clsx, type ClassValue } from "clsx";
 import { useRouter } from "next/navigation";
-import { twMerge } from "tailwind-merge"
+import { twMerge } from "tailwind-merge";
 
 export const cn = (...inputs: ClassValue[]) => {
-  return twMerge(clsx(inputs))
-}
+  return twMerge(clsx(inputs));
+};
 
 export const updateUrlParam = (
   router: ReturnType<typeof useRouter>,
   searchParams: URLSearchParams,
   key: string,
-  value?: string
+  value?: string,
 ) => {
   const params = new URLSearchParams(searchParams.toString());
   if (value) {

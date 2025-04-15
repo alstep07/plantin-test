@@ -10,6 +10,7 @@ export const blogSchema = z.object({
   id: z.string(),
   title: z.string(),
   content: z.string(),
+  imageSrc: z.string(),
   readDurationMinutes: z.number(),
   createdAt: z.string(),
   categories: z.array(z.nativeEnum(BlogCategory)),
