@@ -8,7 +8,7 @@ export const CTABanner: React.FC = () => {
       <div className="md:max-w-[70%] flex flex-col gap-4 md:gap-6 p-4 md:p-6">
         <Logo />
         <div className="flex flex-col gap-2">
-          <h3 className="text-xl font-[800] md:font-[600] text-primary-400">
+          <h3 className="text:lg md:text-xl font-[800] md:font-[600] text-primary-400">
             Get unlimited access to exclusive articles
           </h3>
           <p className="text-md md:text-lg">
