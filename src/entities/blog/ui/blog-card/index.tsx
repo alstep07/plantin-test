@@ -32,9 +32,11 @@ export const BlogCard: React.FC<BlogCardProps> = ({
           src={imageSrc}
           alt={title}
           fill
-          className="object-cover transition-transform duration-300 group-hover:scale-110"
+          className="object-cover transition-transform duration-300 group-hover:scale-110 will-change-transform"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          priority={false}
+          priority={size === "large"}
+          loading={size === "large" ? "eager" : "lazy"}
+          quality={75}
         />
       </div>
       <div className="flex flex-col gap-2">

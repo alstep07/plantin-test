@@ -13,7 +13,7 @@ function Input({ className, type, endicon, ...props }: InputProps) {
         type={type}
         data-slot="input"
         className={cn(
-          "pl-4 py-2.5 md:py-4 pr-10 md:pr-14 placeholder:text-grey-600 selection:bg-primary bg-white dark:bg-input/30 border-input flex h-10 md:h-14 w-full min-w-0 rounded-md shadow-sm text-base transition-[color,box-shadow] disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50",
+          "pl-4 py-2.5 md:py-4 pr-10 md:pr-14 placeholder:text-grey-600 selection:bg-primary bg-white dark:bg-input/30 border-input flex h-10 md:h-14 w-full min-w-0 rounded-md shadow-sm text-base focus:outline-none transition-[color,box-shadow] disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50",
           className,
         )}
         {...props}
