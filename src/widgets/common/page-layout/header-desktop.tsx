@@ -23,10 +23,10 @@ export const AppHeaderDesktop: React.FC = () => {
             </ul>
           </nav>
           <div className="flex items-center gap-6">
-            <IconButton size="md">
+            <IconButton size="md" aria-label="Search">
               <SearchIcon />
             </IconButton>
-            <IconButton size="md">
+            <IconButton size="md" aria-label="User menu">
               <UserIcon />
             </IconButton>
           </div>
