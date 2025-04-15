@@ -1,4 +1,4 @@
-export const links = [
+export const headerLinks = [
   {
     label: "Discover",
     href: "/discover",
@@ -8,7 +8,7 @@ export const links = [
     href: "/my-plants",
   },
   {
-    label: "Diseases",
+    label: "Diseases",  
     href: "/diseases",
   },
   {
@@ -23,4 +23,10 @@ export const links = [
     label: "Contact Us",
     href: "/contact",
   },
+];
+
+export const footerLinks = [
+  { id: 'terms-of-service', label: "Terms of Service", href: "/" },
+  { id: 'privacy-policy', label: "Privacy Policy", href: "/" },
+  { id: 'subscription-policy', label: "Subscription Policy", href: "/" },
 ];
