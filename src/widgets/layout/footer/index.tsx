@@ -1,7 +1,7 @@
 import * as React from "react";
-import { Container, Separator } from "@/shared/ui";
-import { links } from "./links";
 import Link from "next/link";
+import { Container, Separator } from "@/shared/ui";
+import { links } from "./data";
 
 export const Footer: React.FC = () => {
   return (
@@ -28,7 +28,7 @@ export const Footer: React.FC = () => {
             })}
           </div>
           <div className="flex flex-col gap-6">
-            <p>©Copyright&nbsp;©&nbsp;2020&nbsp;PlantIn. All&nbsp;rights&nbsp;reserved</p>
+            <p>©2025&nbsp;PlantIn. All&nbsp;rights&nbsp;reserved</p>
           </div>
         </div>
       </Container>

@@ -3,3 +3,5 @@ export const links = [
   { id: 'privacy-policy', label: "Privacy Policy", href: "/" },
   { id: 'subscription-policy', label: "Subscription Policy", href: "/" },
 ];
+
+export const copyRightText = "©2025&nbsp;PlantIn. All&nbsp;rights&nbsp;reserved";
