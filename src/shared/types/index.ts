@@ -9,3 +9,8 @@ export interface TemperatureData {
   temperature: number;
   location: Location;
 }
+
+export interface SearchParams {
+  [key: string]: string | string[] | undefined;
+}
+  

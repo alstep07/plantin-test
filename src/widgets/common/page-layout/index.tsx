@@ -14,7 +14,7 @@ export const PageLayout: React.FC<PageLayoutProps> = ({ children, paths }) => {
     <div className="min-h-screen flex flex-col justify-between">
       <AppHeaderMobile />
       <AppHeaderDesktop />
-      <main className="flex-1 pt-4">
+      <main className="flex-1 pt-4 pb-[80px] md:pb-[84px]">
         <Container>
           {paths && (
             <>

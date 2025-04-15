@@ -5,7 +5,7 @@ import { Suspense, useState } from "react";
 import { useDebounce } from "react-use";
 import { X } from "lucide-react";
 import { SearchIcon } from "@/shared/icons";
-import { Input } from "@/shared/ui";
+import { Input, Skeleton } from "@/shared/ui";
 import { updateUrlParam } from "@/lib/utils";
 
 const debounceMs = 300;
@@ -37,7 +37,11 @@ export const SearchBlogInput = () => {
   );
 
   return (
-    <Suspense>
+    <Suspense
+      fallback={
+        <Skeleton className="w-full h-10 md:h-14 bg-primary-400/[0.16]" />
+      }
+    >
       <Input
         placeholder="Search"
         endicon={endIcon}

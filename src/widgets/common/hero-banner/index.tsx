@@ -1,7 +1,6 @@
-import { Suspense } from "react";
 import { SearchBlogInput } from "@/features/blog";
-import { BannerImage } from "./banner-image";
 import { CurrentWeather } from "@/entities/weather";
+import { BannerImage } from "./banner-image";
 
 export const HeroBanner: React.FC = () => {
   return (
@@ -23,9 +22,7 @@ export const HeroBanner: React.FC = () => {
           </p>
         </div>
         <div className="mt-4 w-full md:w-[522px] md:max-w-[80%]">
-          <Suspense>
-            <SearchBlogInput />
-          </Suspense>
+          <SearchBlogInput />
         </div>
       </div>
 

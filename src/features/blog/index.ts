@@ -1,1 +1,5 @@
-export { SearchBlogInput } from "./search-blog/ui/search-blog-input";
+export {
+  FilteredBlogsList,
+  SearchBlogInput,
+  isBlogMatchingSearch,
+} from "./search-blog";
