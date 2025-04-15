@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { UserIcon, SearchIcon } from "@/shared/icons";
 import { Container, IconButton } from "@/shared/ui";
-import { links } from "./data";
+import { headerLinks } from "./data";
 
 export const AppHeaderDesktop: React.FC = () => {
   return (
@@ -10,7 +10,7 @@ export const AppHeaderDesktop: React.FC = () => {
         <div className="flex items-center justify-between">
           <nav className="flex items-center gap-8">
             <ul className="flex items-center gap-6">
-              {links.map((link) => (
+              {headerLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}

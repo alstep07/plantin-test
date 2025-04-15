@@ -1,12 +1,9 @@
-import { Footer, AppHeader } from "@/widgets/layout";
+import { PageLayout, HeroBanner } from "@/widgets/common";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col justify-between">
-      <AppHeader />
-      <main className="flex-1">
-      </main>
-      <Footer />
-    </div>
+    <PageLayout>
+      <HeroBanner />
+    </PageLayout>
   );
 }

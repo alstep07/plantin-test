@@ -1,7 +1,7 @@
 import * as React from "react";
 import Link from "next/link";
 import { Container, Separator } from "@/shared/ui";
-import { links } from "./data";
+import { footerLinks } from "./data";
 
 export const Footer: React.FC = () => {
   return (
@@ -9,8 +9,8 @@ export const Footer: React.FC = () => {
       <Container>
         <div className="flex flex-col md:flex-row text-center items-center lg:items-stretch justify-center md:justify-between gap-6 text-sm md:text-xs text-grey-700">
           <div className="flex flex-col md:flex-row gap-2 md:gap-6">
-            {links.map((link, index) => {
-              const isLast = index === links.length - 1;
+            {footerLinks.map((link, index) => {
+              const isLast = index === footerLinks.length - 1;
 
               return (
                 <React.Fragment key={link.id}>
