@@ -23,10 +23,8 @@ export const BlogCard: React.FC<BlogCardProps> = ({
   return (
     <article
       className={cn(
-        "group cursor-pointer transition-all duration-300 overflow-hidden",
-        orientation === "horizontal"
-          ? "grid grid-cols-1 md:grid-cols-2 gap-8"
-          : "gap-4",
+        "group cursor-pointer grid grid-cols-1 transition-all duration-300 overflow-hidden",
+        orientation === "horizontal" ? "md:grid-cols-2 gap-8" : "gap-4",
       )}
     >
       <div className="relative w-full aspect-[1.43] rounded-md overflow-hidden">
@@ -46,7 +44,9 @@ export const BlogCard: React.FC<BlogCardProps> = ({
         <h3
           className={cn(
             "font-bold",
-            size === "large" ? "text-lg lg:text-2xl" : "text-lg",
+            size === "large" && orientation === "horizontal"
+              ? "text-lg lg:text-2xl"
+              : "text-lg",
           )}
         >
           {title}

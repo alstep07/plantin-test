@@ -5,7 +5,7 @@ export const blogs: Blog[] = [
     id: "1",
     title: "Tips & Tricks For Cutting",
     content:
-      "Pruning, like any other skill, requires knowing what you are doing to achieve success. The old idea that anyone with a chain saw or a pruning saw can be a landscape pruner is far from the truth. More trees are killed or ruined each year from improper pruning than by pests. Remember that pruning is the removal or...",
+      "Want healthier, bushier plants? Master the art of cutting! Use clean, sharp scissors or pruning shears to make clean cuts just above a leaf node or bud. Always trim dead or yellowing leaves to boost growth and prevent disease. For bushier plants, pinch off the top set of leaves to encourage branching. Cut in the morning when plants are most hydrated, and avoid over-pruning. Disinfect tools between cuts to prevent spreading pests or fungi. With a little care and timing, your plants will grow stronger and more vibrant!",
     readDurationMinutes: 8,
     createdAt: "2024-03-15T10:00:00Z",
     categories: [BlogCategory.FEATURED],
@@ -13,7 +13,7 @@ export const blogs: Blog[] = [
   },
   {
     id: "2",
-    title: "Professional Guide to Indoor Plant Lighting",
+    title: "Indoor Plant Lighting",
     content:
       "Understanding proper lighting is crucial for indoor plant success. Discover how to assess your space's lighting conditions and choose the right plants that will thrive in your specific environment.",
     readDurationMinutes: 6,
@@ -23,7 +23,7 @@ export const blogs: Blog[] = [
   },
   {
     id: "3",
-    title: "Watering Mastery: Essential Tips for Plant Care",
+    title: "Watering Guide",
     content:
       "Master the art of proper plant watering with our comprehensive guide. Learn about watering frequency, signs of over and under-watering, and how to establish a successful watering routine for different types of plants.",
     readDurationMinutes: 10,
@@ -33,7 +33,7 @@ export const blogs: Blog[] = [
   },
   {
     id: "4",
-    title: "Plant Pot Secrets: Choosing the Right Container",
+    title: "Plant Pot Guide",
     content:
       "Selecting the right pot is more than just aesthetics. Explore the importance of proper pot sizing, drainage considerations, and material choices to ensure your plants have the best foundation for growth.",
     readDurationMinutes: 7,
@@ -43,7 +43,7 @@ export const blogs: Blog[] = [
   },
   {
     id: "5",
-    title: "Seedling Care: From Germination to Growth",
+    title: "Seedling Care Guide",
     content:
       "Follow our detailed guide on nurturing seedlings from the moment they sprout. Learn about optimal conditions, common problems to watch for, and how to successfully transition your seedlings to larger containers.",
     readDurationMinutes: 9,
@@ -53,7 +53,7 @@ export const blogs: Blog[] = [
   },
   {
     id: "6",
-    title: "Natural Pest Control for Indoor Plants",
+    title: "Natural Pest Control",
     content:
       "Discover eco-friendly solutions to common plant pest problems. Learn how to identify different pests, prevent infestations, and treat affected plants using natural remedies that are safe for your home environment.",
     readDurationMinutes: 8,
@@ -63,7 +63,7 @@ export const blogs: Blog[] = [
   },
   {
     id: "7",
-    title: "The Art of Plant Arrangement: Design Tips",
+    title: "Plant Arrangement Tips",
     content:
       "Transform your living space with strategic plant placement. Learn about visual balance, height variations, and how to create stunning plant displays that enhance your home's aesthetic while ensuring optimal growing conditions.",
     readDurationMinutes: 11,
@@ -73,7 +73,7 @@ export const blogs: Blog[] = [
   },
   {
     id: "8",
-    title: "Soil Basics: Creating the Perfect Growing Medium",
+    title: "Soil Basics",
     content:
       "Understanding soil composition is key to plant health. Explore different soil types, learn about essential nutrients, and discover how to create custom soil mixes tailored to your plants' specific needs.",
     readDurationMinutes: 9,
@@ -83,7 +83,7 @@ export const blogs: Blog[] = [
   },
   {
     id: "9",
-    title: "Seasonal Care Guide: Adapting Your Plant Routine",
+    title: "Seasonal Care Guide",
     content:
       "Keep your plants thriving year-round with our seasonal care guide. Learn how to adjust watering, lighting, and feeding schedules as seasons change, and prepare your plants for optimal growth in every season.",
     readDurationMinutes: 7,
@@ -93,7 +93,7 @@ export const blogs: Blog[] = [
   },
   {
     id: "10",
-    title: "Humidity Heroes: Managing Moisture for Tropical Plants",
+    title: "Humidity Control",
     content:
       "Master the art of humidity control for your tropical houseplants. Discover various methods to increase humidity, signs of low humidity stress, and how to create the perfect microclimate for your moisture-loving plants.",
     readDurationMinutes: 6,
@@ -103,7 +103,7 @@ export const blogs: Blog[] = [
   },
   {
     id: "11",
-    title: "DIY Plant Propagation Station Ideas",
+    title: "Propagation Station",
     content:
       "Get creative with your plant propagation setup! Explore various DIY ideas for creating beautiful and functional propagation stations using common household items, recycled materials, and simple crafting techniques.",
     readDurationMinutes: 8,
@@ -113,7 +113,7 @@ export const blogs: Blog[] = [
   },
   {
     id: "12",
-    title: "Understanding Plant Growth Cycles",
+    title: "Growth Cycles",
     content:
       "Dive deep into the fascinating world of plant growth cycles. Learn about dormancy periods, growth spurts, and how to optimize your care routine based on your plants' natural rhythms and seasonal changes.",
     readDurationMinutes: 10,
@@ -123,7 +123,7 @@ export const blogs: Blog[] = [
   },
   {
     id: "13",
-    title: "Essential Tools for Indoor Gardening",
+    title: "Gardening Tools",
     content:
       "Build your indoor gardening toolkit with our comprehensive guide to essential equipment. From basic necessities to specialized tools, discover what you really need to maintain a thriving indoor garden.",
     readDurationMinutes: 7,
@@ -133,7 +133,7 @@ export const blogs: Blog[] = [
   },
   {
     id: "14",
-    title: "Common Plant Diseases and Their Solutions",
+    title: "Plant Diseases",
     content:
       "Learn to identify and treat common plant diseases before they become serious problems. Our guide covers symptoms, prevention methods, and organic treatment options to keep your plants healthy and thriving.",
     readDurationMinutes: 9,
@@ -143,7 +143,7 @@ export const blogs: Blog[] = [
   },
   {
     id: "15",
-    title: "Creating a Plant Care Calendar",
+    title: "Care Calendar",
     content:
       "Stay organized with your plant care routine by creating an effective care calendar. Learn how to track watering schedules, fertilization needs, pruning times, and other essential maintenance tasks.",
     readDurationMinutes: 6,

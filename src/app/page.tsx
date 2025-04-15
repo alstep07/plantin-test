@@ -1,9 +1,9 @@
 import { SearchParams } from "@/shared/types";
 import { getParamsSearchValue } from "@/lib/utils";
 import { PageLayout, HeroBanner } from "@/widgets/common";
-import { FeaturedBlogSection, FilteredBlogsList } from "@/widgets/blog";
-import { blogs } from "@/entities/blog";
-import { BlogCategory } from "@/entities/blog/model/schema";
+import { BlogListSection, FeaturedBlogSection } from "@/widgets/blog";
+import { FilteredBlogsList } from "@/features/blog";
+import { blogs, BlogCategory, BlogListLoader } from "@/entities/blog";
 
 export default async function Home({
   searchParams,
@@ -16,17 +16,53 @@ export default async function Home({
     blog.categories.includes(BlogCategory.FEATURED),
   );
 
+  const topOfTheDayBlogs = blogs.filter((blog) =>
+    blog.categories.includes(BlogCategory.TOP_OF_THE_DAY),
+  );
+
+  const interestingBlogs = blogs.filter((blog) =>
+    blog.categories.includes(BlogCategory.INTERESTING),
+  );
+
+  const otherBlogs = blogs.filter((blog) => !blog.categories.length);
+
   return (
     <PageLayout paths={[{ label: "Home", href: "/" }, { label: "Blog" }]}>
       <HeroBanner />
       <div className="pt-4.5 md:pt-12">
-        {!!searchValue && <FilteredBlogsList searchValue={searchValue} />}
-        {!searchValue && (
+        {searchValue ? (
+          <FilteredBlogsList searchValue={searchValue} />
+        ) : (
           <>
-            <div className="">
-              {featuredBlog && (
+            <div className="flex flex-col gap-6 md:gap-14">
+              {!!featuredBlog && (
                 <FeaturedBlogSection label="New" blog={featuredBlog} />
               )}
+              {!!topOfTheDayBlogs.length && (
+                <BlogListSection
+                  title="Top of the day"
+                  blogs={topOfTheDayBlogs}
+                  blogSize="large"
+                  withSeparator
+                />
+              )}
+              {!!interestingBlogs.length && (
+                <BlogListSection
+                  title="Interesting"
+                  blogs={interestingBlogs}
+                  blogSize="medium"
+                  withSeparator
+                />
+              )}
+              {!!otherBlogs.length && (
+                <BlogListSection blogs={otherBlogs} blogSize="medium" />
+              )}
+              <div className="hidden md:block">
+                <BlogListLoader count={3} />
+              </div>
+              <div className="block md:hidden">
+                <BlogListLoader count={1} />
+              </div>
             </div>
           </>
         )}

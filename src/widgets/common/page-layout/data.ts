@@ -12,7 +12,7 @@ export const headerLinks = [
     href: "/",
   },
   {
-    label: "",
+    label: "Blog",
     href: "/",
   },
   {
