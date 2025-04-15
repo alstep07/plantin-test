@@ -19,21 +19,26 @@ const iconButtonVariants = cva(
   }
 )
 
+interface IconButtonProps extends React.ComponentProps<"button">,
+  VariantProps<typeof iconButtonVariants> {
+  asChild?: boolean
+  "aria-label": string
+}
+
 function IconButton({
   className,
   size,
   asChild = false,
+  "aria-label": ariaLabel,
   ...props
-}: React.ComponentProps<"button"> &
-  VariantProps<typeof iconButtonVariants> & {
-    asChild?: boolean
-  }) {
+}: IconButtonProps) {
   const Comp = asChild ? Slot : "button"
 
   return (
     <Comp
       data-slot="button"
       className={cn(iconButtonVariants({ size, className }))}
+      aria-label={ariaLabel}
       {...props}
     />
   )

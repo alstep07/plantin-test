@@ -10,7 +10,7 @@ export const AppHeaderMobile: React.FC = () => {
           <Link href="/">
             <Logo />
           </Link>
-          <IconButton size="sm">
+          <IconButton size="sm" aria-label="Menu">
             <MenuIcon />
           </IconButton>
         </div>

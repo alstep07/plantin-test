@@ -16,7 +16,7 @@ export const CTABanner: React.FC = () => {
           </p>
         </div>
         <div className="md:self-start flex flex-col gap-4 md:gap-6">
-          <Button>Try For Free</Button>
+          <Button aria-label="Try for free">Try For Free</Button>
         </div>
       </div>
       <div className="hidden md:block absolute -right-[15px] -top-[9px] w-[336px] max-w-[35%] aspect-[1.29]">
