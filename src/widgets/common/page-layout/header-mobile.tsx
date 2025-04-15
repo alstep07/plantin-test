@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const AppHeaderMobile: React.FC = () => {
   return (
-    <header className="stickytop-0 right-0 left-0 py-4 block md:hidden shadow-md">
+    <header className="z-1 sticky top-0 right-0 left-0 py-4 block md:hidden shadow-md bg-white">
       <Container>
         <div className="flex items-center justify-between">
           <Link href="/">

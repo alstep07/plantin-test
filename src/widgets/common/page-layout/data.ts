@@ -1,27 +1,27 @@
 export const headerLinks = [
   {
     label: "Discover",
-    href: "/discover",
+    href: "/",
   },
   {
     label: "My Plants",
-    href: "/my-plants",
+    href: "/",
   },
   {
     label: "Diseases",  
-    href: "/diseases",
+    href: "/",
   },
   {
-    label: "Blog",
-    href: "/blog",
+    label: "",
+    href: "/",
   },
   {
     label: "FAQ",
-    href: "/faq",
+    href: "/",
   },
   {
     label: "Contact Us",
-    href: "/contact",
+    href: "/",
   },
 ];
 

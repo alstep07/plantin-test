@@ -1,1 +1,1 @@
-export { SearchBlogInput } from "./search-blog/ui/search-blog-input";
+export { SearchBlogInput, isBlogMatchingSearch } from "./search-blog";
