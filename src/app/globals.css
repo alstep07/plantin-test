@@ -5,7 +5,6 @@ body {
   font-family: var(--font-display);
   background-color: var(--color-grey-50);
   color: var(--color-grey-900);
-  line-height: 1.5;
 }
 
 @theme {
@@ -39,11 +38,17 @@ body {
   --font-family-display: "Poppins", sans-serif;
 
   --text-2xl: 48px;
+  --text-2xl--line-height: 1.5;
   --text-xl: 32px;
+  --text-xl--line-height: 1.5;
   --text-lg: 24px;
+  --text-lg--line-height: 1.5;
   --text-md: 18px;
+  --text-md--line-height: 1.5;
   --text-sm: 16px;
+  --text-sm--line-height: 1.5;
   --text-xs: 14px;
+  --text-xs--line-height: 1.5;
 
   --radius-xs: 4px;
   --radius-sm: 8px;

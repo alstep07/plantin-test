@@ -1,4 +1,5 @@
 import { BannerImage } from "./banner-image";
+import { CurrentWeather } from "@/entities/weather";
 
 export const HeroBanner: React.FC = () => {
   return (
@@ -7,12 +8,12 @@ export const HeroBanner: React.FC = () => {
       aria-label="Featured content"
     >
       <div className="max-w-[70%]">
-        <h2 className="text-xl font-[800] text-primary-400">
+        <h1 className="text-xl font-[800] text-primary-400">
           Stay always tuned with planting trends
-        </h2>
-        <p className="mt-2 text-md font-[700]" aria-live="polite">
-          Current temperature is: 24°C
-        </p>
+        </h1>
+        <div className="mt-2">
+          <CurrentWeather />
+        </div>
       </div>
 
       <div
