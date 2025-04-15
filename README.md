@@ -1,36 +1,113 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PlantIn Test App
 
-## Getting Started
+## Table of Contents
 
-First, run the development server:
+- [Overview](#overview)
+- [Project Structure](#project-structure)
+- [API Structure](#api-structure)
+- [Development Process](#development-process)
+- [Deployment Process](#deployment-process)
+- [Technology Stack](#technology-stack)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Overview
+
+This is a test task implementation for PlantIn, built with Next.js.
+
+A live demo is available at [https://plantin-test.vercel.app/](https://plantin-test.vercel.app/).
+
+## Project Structure
+
+The project follows the Feature-Sliced Design (FSD) methodology, organizing code into the following layers:
+
+```
+src/
+├── app/           # Application layer - routing, layouts, pages
+├── widgets/       # Widgets layer - complex UI components
+├── features/      # Features layer - user interactions
+├── entities/      # Entities layer - business logic
+├── shared/        # Shared layer - reusable components, utilities
+└── lib/           # Infrastructure layer - API clients, configs
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Layer Descriptions:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **app**: Contains the application's routing configuration and page components
+- **widgets**: Complex UI components that combine multiple entities/features
+- **features**: User interactions and business processes
+- **entities**: Core business entities and their logic
+- **shared**: Reusable UI components, utilities, and types
+- **lib**: Infrastructure code, API clients, and configuration
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## API Structure
 
-## Learn More
+API endpoints:
 
-To learn more about Next.js, take a look at the following resources:
+- `/api/get-current-temperature` - Returns current temperature and location data
+  - **Method**: GET
+  - **Response Format**: JSON
+  - **Response Fields**:
+    - `temperature`: Current temperature in Celsius (number)
+    - `location`: Object containing city and country information
+  - **Rate Limiting**: 60 requests per minute per IP
+  - **Error Handling**:
+    - 429: Too many requests
+    - 500: Server error
+  - **Implementation Details**:
+    - Uses Weatherstack API for real temperature data
+    - Falls back to random temperature (-10°C to +30°C) for localhost
+    - Uses IP-API for location detection
+    - Requires WEATHERSTACK_API_KEY environment variable
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Development Process
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Prerequisites
 
-## Deploy on Vercel
+- Node.js (v18 or higher)
+- Yarn package manager
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Installation
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+# Install dependencies
+yarn install
+
+# Run development server
+yarn dev
+```
+
+### Environment Variables
+
+Create a `.env.local` file with the following variables:
+
+```
+NEXT_PUBLIC_API_URL=your_api_url
+```
+
+## Deployment Process
+
+### Vercel Deployment
+
+The application is deployed on Vercel. The deployment process is automated through Vercel's platform:
+
+1. Push changes to the main branch
+2. Vercel automatically builds and deploys the application
+3. Environment variables are managed through Vercel's dashboard
+
+### Build Process
+
+```bash
+# Build the application
+yarn build
+
+# Start the production server
+yarn start
+```
+
+## Technology Stack
+
+- **Framework**: [Next.js 15.3.0](https://nextjs.org/docs)
+- **UI Library**: [React 19](https://react.dev)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/docs)
+- **Type Checking**: [TypeScript](https://www.typescriptlang.org/docs)
+- **Validation**: [Zod](https://zod.dev)
+- **UI Components**: [Shadcn UI](https://ui.shadcn.com)
