@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { SearchBlogInput } from "@/features/blog";
 import { BannerImage } from "./banner-image";
 import { CurrentWeather } from "@/entities/weather";
@@ -22,7 +23,9 @@ export const HeroBanner: React.FC = () => {
           </p>
         </div>
         <div className="mt-4 w-full md:w-[522px] md:max-w-[80%]">
-          <SearchBlogInput />
+          <Suspense>
+            <SearchBlogInput />
+          </Suspense>
         </div>
       </div>
 

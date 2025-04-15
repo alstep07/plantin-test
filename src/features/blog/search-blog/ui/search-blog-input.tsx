@@ -1,7 +1,7 @@
 "use client";
 
 import { useSearchParams, useRouter } from "next/navigation";
-import { useState } from "react";
+import { Suspense, useState } from "react";
 import { useDebounce } from "react-use";
 import { X } from "lucide-react";
 import { SearchIcon } from "@/shared/icons";
@@ -37,11 +37,13 @@ export const SearchBlogInput = () => {
   );
 
   return (
-    <Input
-      placeholder="Search"
-      endicon={endIcon}
-      value={searchValue}
-      onChange={(e) => setSearchValue(e.target.value)}
-    />
+    <Suspense>
+      <Input
+        placeholder="Search"
+        endicon={endIcon}
+        value={searchValue}
+        onChange={(e) => setSearchValue(e.target.value)}
+      />
+    </Suspense>
   );
 };
