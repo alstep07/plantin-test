@@ -1,9 +1,13 @@
 import { SearchParams } from "@/shared/types";
 import { getParamsSearchValue } from "@/lib/utils";
-import { PageLayout, HeroBanner } from "@/widgets/common";
+import { PageLayout, HeroBanner, CTABanner } from "@/widgets/common";
 import { BlogListSection, FeaturedBlogSection } from "@/widgets/blog";
 import { FilteredBlogsList } from "@/features/blog";
 import { blogs, BlogCategory, BlogListLoader } from "@/entities/blog";
+
+export const runtime = "edge";
+export const dynamic = "force-dynamic";
+export const revalidate = 3600;
 
 export default async function Home({
   searchParams,
@@ -54,11 +58,15 @@ export default async function Home({
                   withSeparator
                 />
               )}
+              <CTABanner />
               {!!otherBlogs.length && (
                 <BlogListSection blogs={otherBlogs} blogSize="medium" />
               )}
-              <div className="hidden md:block">
+              <div className="hidden lg:block">
                 <BlogListLoader count={3} />
+              </div>
+              <div className="hidden md:block lg:hidden">
+                <BlogListLoader count={2} />
               </div>
               <div className="block md:hidden">
                 <BlogListLoader count={1} />
